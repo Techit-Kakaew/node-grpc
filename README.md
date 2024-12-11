@@ -7,10 +7,10 @@ First, run install packages:
 npm install
 ```
 
-Run project:
+Run locally:
 
 ```bash
-npm run start
+npm run dev
 ```
 
 Run test:
