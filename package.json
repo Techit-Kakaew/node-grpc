@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node src/grpcServer.js",
-    "dev": "ts-node src/grpcServer.ts", 
+    "build": "tsc && copyfiles -u 1 src/proto/**/* dist/",
+    "start": "node dist/grpcServer.js",
+    "dev": "ts-node src/grpcServer.ts",
     "test": "jest"
   },
   "keywords": [],
@@ -21,5 +21,8 @@
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.2"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1"
   }
 }
