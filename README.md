@@ -7,7 +7,7 @@ First, run install packages:
 npm install
 ```
 
-Run locally:
+Run development server:
 
 ```bash
 npm run dev
